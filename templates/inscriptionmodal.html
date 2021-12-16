@@ -1,0 +1,83 @@
+{% load static %}
+{% load i18n %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title> Login Modal Form</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<style>
+body {
+	font-family: 'Varela Round', sans-serif;
+}
+
+</style>
+</head>
+<body>
+<!-- Modal HTML -->
+<div id="myModal2" class="modal fade">
+	<div class="modal-dialog modal-lg modal-login">
+		<div class="modal-content">
+			<form  method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+				<div class="modal-header">
+					<h4 class="modal-title">Créer un compte utilisateur</h4>
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				</div>
+				<div class="modal-body">
+					<div class="form-group" style="border-color: rgb(225,145,50)">
+            <div class="container " style="border:none">
+              <div class="row">
+                <div class="col-4">
+                  <label>{% blocktranslate %}username et nom{% endblocktranslate %}</label><br>
+      						{{inscription.username }}<br><br>
+                  {{inscription.last_name }}<br><br><br>
+                  <label>{% blocktranslate %}Addresse mail{% endblocktranslate %}</label><br>
+                  {{inscription.email }}<br><br>
+                  <label>{% blocktranslate %}Départements{% endblocktranslate %}</label><br>
+                  {{inscription.departement }}
+                </div>
+                <div class="col-4">
+                  <br><br><br><br><br><br><br><br><br><br><br>
+                  <label>{% blocktranslate %}Classe-Niveau{% endblocktranslate %}</label><br>
+                  {{inscription.appartient }}
+                </div>
+                <div class="col-4">
+
+                  <label>{% blocktranslate %}Date et lieu de naissance{% endblocktranslate %}</label><br>
+                  {{inscription.date_de_naissance }}<br><br>
+                  {{inscription.lieu_de_naissance }}<br><br>
+                  <label>{% blocktranslate %}Mot de passe et confirmation{% endblocktranslate %}</label><br>
+                  {{inscription.password }}<br><br>
+                  {{inscription.password }}<br><br><br><br>
+                  <br><br>
+                  <label>Captcha</label><br>
+                  <img src="{% static 'images/captcha.png' %}" height="40" alt="captcha">
+                  <br><br>
+                  <input type="text" name="" value="">
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+					</div>
+					<div class="form-group" style="border-color: rgb(225,145,50)">
+            <label class="form-check-label" ><input type="checkbox">{% blocktranslate %} Se souvenir de moi{% endblocktranslate %} <a href="#" class="float-right text-muted" ><small style="color : rgb(225,145,50);">{% blocktranslate %}Mot de pass oublié ?{% endblocktranslate %}</small></a></label>
+
+					</div>
+				</div>
+				<div class="modal-footer justify-content-between">
+					<input type="submit" class="btn " style="color : white ; background-color:rgb(225,145,50)" value="Valider">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+</body>
+</html>
+{% endblock %}

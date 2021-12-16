@@ -1,0 +1,87 @@
+{% load static %}
+{% load i18n %}
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    {% block title %}
+    <title></title>
+    {% endblock title %}
+    <link rel="stylesheet" href="{% static 'css\bootstrap.min.css' %}">
+    <style media="screen">
+      #departements {
+        color : rgb(225,145,50) ;
+      }
+      table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+      }
+
+      td, th {
+      border: 1px solid rgb(225,145,50);
+      text-align: left;
+      padding: 8px;
+      }
+
+      tr:nth-child(even) {
+      background-color: rgb(225,145,50);
+      }
+    </style>
+    <body>
+        <header>
+        {% block extraheader %}
+        {% include "head.html" %}
+        {% endblock extraheader %}
+        </header>
+
+        <div style="background-color:rgb(225,145,50); height:2em">
+          <h2 style="color:white">{% blocktranslate %}BIENVENUE au departement{% endblocktranslate %} {{ nom_departement }}</h2>
+        </div>
+        <div class="">
+          {% if request.user.is_authenticated %}
+          <h2>{% blocktranslate %}La liste des eleves en{% endblocktranslate %} {{ nom_departement }}{% blocktranslate %} toute classe confondues{% endblocktranslate %}</h2>
+            <table>
+            <tr>
+            <th>{% blocktranslate %}prenom{% endblocktranslate %} </th>
+            <th>{% blocktranslate %}nom{% endblocktranslate %}</th>
+            <th>{% blocktranslate %}email{% endblocktranslate %}</th>
+            <th>{% blocktranslate %}classe{% endblocktranslate %}</th>
+            <th>{% blocktranslate %}date de naissance{% endblocktranslate %}</th>
+            </tr>
+
+          {% for git in liste_git %}
+          <tr>
+            <td>{{ git.prenom }} </td>
+            <td>{{ git.nom }} </td>
+            <td>{{ git.mail }} </td>
+            {% for classe in git.appartient.all %}
+            <td>{{ classe }}</td>
+            {% endfor %}
+            <td>{{ git.date_de_naissance }} </td>
+          </tr>
+          {% endfor %}
+        </table>
+        <br><br>
+          {% else %}
+          <p>{% blocktranslate %}veuillez vous connecter pour voir la liste des eleves {% endblocktranslate %}</p>
+          {% endif %}
+        </div>
+
+
+      </div>
+        {% block loginmodal %}
+        {% include "loginmodal.html" %}
+        {% endblock loginmodal %}
+        {% block inscriptionmodal %}
+        {% include "inscriptionmodal.html" %}
+        {% endblock inscriptionmodal %}
+        {% block footer %}
+        {% include "footer.html" %}
+        {% endblock footer %}
+    </body>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</html>

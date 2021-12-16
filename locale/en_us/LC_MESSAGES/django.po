@@ -1,0 +1,198 @@
+
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-14 17:58+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: .\templates\base.html:34
+msgid "Sagesse Devoir"
+msgstr "Wisdom Duty"
+
+#: .\templates\base.html:36
+msgid ""
+"L'Ecole Polytechnique de Thies connu sous le sigle EPT est\n"
+"              une grande ecole d'ingenieurs implantée au Senegal .Cree en "
+"1973 par\n"
+"              Leopold Sedar Senghor , elle forme des ingenieurs dans les "
+"domaines du genie civil de l'electromecanique(avec filiere aeronautique)\n"
+"              et du genie informatique et telecommunications"
+msgstr "The Ecole Polytechnique de Thies known by the acronym EPT is a large engineering school located in Senegal. Created in 1973 by Leopold Sedar Senghor, she trains engineers in fields of electromechanical civil engineering (with aeronautical branch) and computer and telecommunications engineering"
+
+#: .\templates\contacts.html:24 .\templates\footer.html:33
+#: .\templates\head.html:76
+msgid "Contacts"
+msgstr "Contacts"
+
+#: .\templates\contacts.html:29
+msgid "Mail"
+msgstr "Mail"
+
+#: .\templates\contacts.html:32 .\templates\footer.html:40
+msgid "Postal"
+msgstr "Postal"
+
+#: .\templates\contacts.html:35 .\templates\footer.html:43
+msgid "Telephone"
+msgstr "Telephone"
+
+#: .\templates\contacts.html:48
+msgid ""
+"l'EPT est situee dans la region de Thies (environ 70km de Dakar , "
+"Senegal ),\n"
+"                       sur un terrain de plus de 400 hectares . Son Campus "
+"comporte des locaux d'enseignement pedagogiques et de recherche , "
+"d'administration , d'exploitation , et d'hebergement a l'usage des "
+"etudiants\n"
+"                        et d'une partie du personnel"
+msgstr "EPT is located in the region of Thies (about 70km from Dakar, Senegal), on a plot of over 400 hectares. Its Campus includes educational, educational and research premises, administration, operation, and accommodation for the use of students and part of the staff"
+
+#: .\templates\contacts.html:56
+msgid "Location"
+msgstr ""
+
+#: .\templates\contacts.html:63
+msgid "iteneraire EPT dans une vue de plan grace a google maps API"
+msgstr "EPT route in a plan view thanks to google maps API"
+
+#: .\templates\contacts.html:70
+msgid "trouver directement votre itineraire depuis votre adresse jusqu'a l'EPT"
+msgstr "find your route directly from your address to the EPT"
+
+#: .\templates\contacts.html:75
+msgid "Rechercher"
+msgstr "To research"
+
+#: .\templates\departement.html:39
+msgid "BIENVENUE au departement"
+msgstr "WELCOME to the department"
+
+#: .\templates\departement.html:43
+msgid "La liste des eleves en"
+msgstr "The list of students in"
+
+#: .\templates\departement.html:43
+msgid " toute classe confondues"
+msgstr " all classes combined"
+
+#: .\templates\departement.html:46
+msgid "prenom"
+msgstr "first name"
+
+#: .\templates\departement.html:47
+msgid "nom"
+msgstr "last name"
+
+#: .\templates\departement.html:48
+msgid "email"
+msgstr "mail"
+
+#: .\templates\departement.html:49
+msgid "classe"
+msgstr "Classroom"
+
+#: .\templates\departement.html:50
+msgid "date de naissance"
+msgstr "Date of Birth"
+
+#: .\templates\departement.html:67
+msgid "veuillez vous connecter pour voir la liste des eleves "
+msgstr "please log in to see the list of students"
+
+#: .\templates\footer.html:18
+msgid "Ecole Polytechnique de Thies"
+msgstr "Polytechnic School of Thies"
+
+#: .\templates\footer.html:57
+msgid "Social"
+msgstr "Social"
+
+#: .\templates\head.html:59
+msgid "Accueil"
+msgstr "Home"
+
+#: .\templates\head.html:65
+msgid "Genie Informatique-Telecoms"
+msgstr "Computer Engineering-Telecoms"
+
+
+#: .\templates\head.html:67
+msgid "Genie Civil"
+msgstr "Civil Engineering"
+
+#: .\templates\head.html:69
+msgid "Genie Electromecanique"
+msgstr "Electromechanical engineering"
+
+#: .\templates\head.html:71
+msgid "Genie Aeronautique"
+msgstr "Aeronautical Engineering"
+
+#: .\templates\head.html:75
+msgid "Administration"
+msgstr "Administration"
+
+#: .\templates\head.html:77
+msgid "A propos"
+msgstr "In regards to"
+
+#: .\templates\head.html:101
+msgid "Bienvenue"
+msgstr "Welcome"
+
+#: .\templates\head.html:102
+msgid "Deconnexion"
+msgstr "Log out"
+
+#: .\templates\head.html:105 .\templates\loginmodal.html:26
+msgid "Connexion"
+msgstr "Log in"
+
+#: .\templates\head.html:106
+msgid "Inscription"
+msgstr "register"
+
+#: .\templates\inscriptionmodal.html:34
+msgid "username et nom"
+msgstr "username and name"
+
+#: .\templates\inscriptionmodal.html:37
+msgid "Addresse mail"
+msgstr "mail address"
+
+#: .\templates\inscriptionmodal.html:39
+msgid "Départements"
+msgstr "Departments"
+
+#: .\templates\inscriptionmodal.html:44
+msgid "Classe-Niveau"
+msgstr "Class-Level"
+
+#: .\templates\inscriptionmodal.html:49
+msgid "Date et lieu de naissance"
+msgstr "Date and place of birth"
+
+#: .\templates\inscriptionmodal.html:52
+msgid "Mot de passe et confirmation"
+msgstr "Password and confirmation"
+
+#: .\templates\inscriptionmodal.html:70 .\templates\loginmodal.html:39
+msgid " Se souvenir de moi"
+msgstr " Remember me"
+
+#: .\templates\inscriptionmodal.html:70 .\templates\loginmodal.html:45
+msgid "Mot de pass oublié ?"
+msgstr "Forgot your password?"
